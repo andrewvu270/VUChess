@@ -1,0 +1,28 @@
+<nav>
+    <a href="/" class="nav-brand">VUChess <img src="/assets/chess-icons/chess-pawn-solid.svg" alt="Chess Pawm"></a>
+    <ul class="nav">
+        <% if(authorized){ %>
+            <li class="nav-link">
+                <a href="/games">Play game</a>
+            </li>
+    
+            <li class="nav-link">
+                <a href="/my-stat">My stats</a>
+            </li>
+            
+            <li class="nav-link">
+                <a href="/profile">Profile</a>
+            </li>
+            
+        <% } else { %>
+            <li class="nav-link">
+                <a href="/register">Register</a>
+            </li>
+    
+            <li class="nav-link">
+                <a href="/login">Login</a>
+            </li>
+        <% } %>
+
+    </ul>
+</nav>
